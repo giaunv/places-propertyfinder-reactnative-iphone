@@ -16,6 +16,7 @@
 		3CCD3AC61AB1E131004DC554 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCD3AA91AB1DF7E004DC554 /* libRCTImage.a */; };
 		3CCD3AC71AB1E131004DC554 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCD3ABC1AB1DFAD004DC554 /* libRCTNetwork.a */; };
 		3CCD3AC81AB1E132004DC554 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CCD3AB61AB1DFA4004DC554 /* libRCTText.a */; };
+		94D117811AC6C79C0026FF2C /* PropertyFinderApp.js in Resources */ = {isa = PBXBuildFile; fileRef = 94D117801AC6C79C0026FF2C /* PropertyFinderApp.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		3CCD3AB11AB1DFA4004DC554 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = ../../Libraries/Text/RCTText.xcodeproj; sourceTree = "<group>"; };
 		3CCD3AB71AB1DFAD004DC554 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = ../../Libraries/Network/RCTNetwork.xcodeproj; sourceTree = "<group>"; };
 		834D32361A76971A00F38302 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = ../../React/React.xcodeproj; sourceTree = "<group>"; };
+		94D117801AC6C79C0026FF2C /* PropertyFinderApp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = PropertyFinderApp.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		13B07FAE1A68108700A75B9A /* PropertyFinder */ = {
 			isa = PBXGroup;
 			children = (
+				94D117801AC6C79C0026FF2C /* PropertyFinderApp.js */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -275,6 +278,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				94D117811AC6C79C0026FF2C /* PropertyFinderApp.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
