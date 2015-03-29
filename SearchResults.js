@@ -4,7 +4,7 @@ var {
 	StyleSheet,
 	Image,
 	View,
-	TouchableHighLight,
+	TouchableHighlight,
 	ListView,
 	Text,
 	Component
@@ -25,12 +25,12 @@ class SearchResults extends Component{
 
 	renderRow(rowData, sectionID, rowID){
 		return (
-			<TouchableHighLight
+			<TouchableHighlight
 				underlayColor='#dddddd'>
 				<View>
 					<Text>{rowData.title}</Text>
 				</View>
-			</TouchableHighLight>
+			</TouchableHighlight>
 		);
 	}
 

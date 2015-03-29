@@ -104,7 +104,7 @@ class SearchPage extends Component{
 		if (response.application_response_code.substr(0,1) === '1') {
 			console.log('Properties found: ' + response.listings.length);
 			this.props.navigator.push({
-				title: Results,
+				title: 'Results',
 				component: SearchResults,
 				passProps: {listings: response.listings}
 			})
@@ -119,7 +119,7 @@ class SearchPage extends Component{
 		
 		fetch(query)
 		  .then(response => response.json())
-		  //.then(json => this._handleResponse(json.response))
+		  .then(json => this._handleResponse(json.response))
 		  .catch(error => 
 		     this.setState({
 		      isLoading: false,
