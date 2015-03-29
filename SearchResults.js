@@ -1,5 +1,7 @@
 'use strict';
 var React = require('react-native');
+var PropertyView = require('./PropertyView');
+
 var {
 	StyleSheet,
 	Image,
@@ -53,6 +55,12 @@ class SearchResults extends Component{
 
 	rowPressed(propertyGuid){
 		var property = this.props.listings.filter(prop => prop.guid == propertyGuid)[0];
+
+		this.props.navigator.push({
+			title: 'Property',
+			component: PropertyView,
+			passProps: {property: property}
+		});
 	}
 
 	renderRow(rowData, sectionID, rowID){
@@ -65,7 +73,7 @@ class SearchResults extends Component{
 					<View style={styles.rowContainer}>
 						<Image style={styles.thumb} source={{uri: rowData.img_url}} />
 						<View style={styles.textContainer}>
-							<Text style={styles.price}>${price}</Text>
+							<Text style={styles.price}>£{price}</Text>
 							<Text style={styles.title} numberOfLines={1}>{rowData.title}</Text>
 						</View>
 					</View>
